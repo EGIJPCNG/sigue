@@ -1,0 +1,36 @@
+.sg-zoomMap { /* Clase para el contenedor de los botones de zoom (posicionar) */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #3333333f;
+    padding: .5rem;
+
+    /* Posiciona el contenedor en la esquina inferior derecha */
+    bottom: 1.5rem;
+    left: 1rem;
+    position: absolute;
+    gap: .35rem;
+
+    border-radius: 1.5rem;
+
+    position: fixed; /* O fixed si quieres que se quede fijo al hacer scroll */
+}
+
+.sg-zoomMap button {
+  display: flex;
+  height: 3rem;
+  width: 3rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px; /* Valor grande para hacerlo completamente redondo */
+  background-color: white;
+  font-size: 1.5rem;
+  color: #0a0a40;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: background-color 0.2s ease-in-out;
+}
+
+.sg-zoomMap button:hover {
+  background-color: #f3f4f6; /* Cambia el color de fondo al pasar el mouse */
+}
