@@ -1,0 +1,117 @@
+/******************************* Main-Zoom ************************************/
+/******************************* DESKTOP **************************************/
+
+.sg-zoomMap {
+    background-color: #3333333f;
+}
+
+.sg-zoomMap button {
+  background-color: white;
+  font-size: 1.5rem;
+  color: #0a0a40;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: background-color 0.2s ease-in-out;
+}
+
+.sg-zoomMap button:hover {
+  background-color: #f3f4f6; /* Cambia el color de fondo al pasar el mouse */
+}
+
+/******************************* Main-Header ************************************/
+/******************************* DESKTOP **************************************/
+
+.sg-headerInfo-builder {
+  color: aliceblue;
+}
+
+.sg-headerInfo-builder__left {
+  border: 2px solid rgba(240, 248, 255, 0.425);
+}
+
+.sg-headerInfo-builder__right {
+  border: 2px solid rgba(240, 248, 255, 0.425);
+}
+
+.sg-headerLogin-button {
+  background-color: #8400ff3f;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  transition: color 0.4s;
+}
+
+.sg-headerLogin-button:hover {
+    background-color: #8400ff;
+    color: greenyellow;
+}
+
+.sg-button-search {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.sg-headerInfo-divider {
+  background-color: #ffffff4d;
+}
+
+.sg-input-bgTransparent {
+  color: white;
+  background-color: transparent;
+}
+
+.sg-input-bgTransparent::placeholder {
+  color: white;
+}
+
+/******************************* Main-Dropdown ************************************/
+/******************************* DESKTOP **************************************/
+
+.sg-dropdown-contentBuilder {
+  background-color: #33333357;
+  color:white;
+}
+
+.sg-dropDownInfo-contentHoras{
+  border: 2px solid rgb(111, 0, 255);
+}
+
+.sg-aulaLibre{
+  border: 2px solid rgb(0, 255, 42);
+  background-color: rgba(14, 124, 0, 0.226);
+}
+
+.sg-aulaLibre:hover{
+    background-color: rgba(14, 124, 0, 0.426);
+}
+
+.sg-aulaOcupada{
+  border: 2px solid rgb(255, 119, 0);
+  background-color: rgba(121, 32, 0, 0.178);
+}
+
+.sg-aulaOcupada:hover{
+    background-color: rgba(121, 32, 0, 0.378);
+}
+
+.button-group button {
+  color: white;
+  background-color: transparent;
+}
+
+/* Estilo para el botón activo */
+.button-group button.active {
+  background-color: #5a2cff;
+  color: white;
+  border: none;
+}
+
+/* Estilo para el hover */
+.button-group button:hover {
+  background-color: #7c58ff;
+}
+
+/******************************* Main-Map ************************************/
+/******************************* DESKTOP **************************************/
