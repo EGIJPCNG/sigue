@@ -17,6 +17,11 @@
     z-index: 10; /* Asegura que esté por encima de otros elementos */
 }
 
+.sg-zoomMap-in, .sg-zoomMap-out {
+    width: 2em;
+    height: 2em;
+}
+
 /******************************* Main-Header ************************************/
 /******************************* DESKTOP **************************************/
 
@@ -79,10 +84,8 @@
   position: fixed;
   top: 15%;
   right: 0.5%;
-  height: 75%;
-  width: 20%;
-  padding: 5rem;
-  overflow-y: auto; /* Evita desbordamientos */
+  height: auto;
+  width: auto;
   z-index: 15; /* Asegura que esté por encima de otros elementos */
 }
 
@@ -116,6 +119,7 @@
   align-content: flex-start;
   justify-content: flex-start;
   width: 100%;
+  
   overflow-y: auto;
   max-height: 150px;
 }
@@ -152,4 +156,37 @@
   transform-origin: center;
   transition: transform 0.9s ease-out;
   z-index: 5; /* Asegura que esté detrás de otros elementos */
+}
+
+/******************************************** DROPDOWN - OPTION  *********************************************/
+
+.sg-dropDownOption-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+    position: relative;
+}
+
+.sg-dropDownOption-buttonOption{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.sg-buttonOption {
+    width: 4em;
+    height: 4em;
+}
+
+.sg-buttonInfo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 2em;
 }

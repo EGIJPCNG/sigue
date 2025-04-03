@@ -3,15 +3,15 @@
 export function MainZoom({ onZoomIn, onZoomOut }) {
   return (
     <article className="sg-zoomMap">
-      <button
-        className="flex h-12 w-12 items-center justify-center rounded-full bg-white text-2xl text-[#0a0a40] shadow-lg hover:bg-gray-100"
+      <button 
+        className="sg-zoomMap-in"
         aria-label="Acercar"
         onClick={onZoomIn}
       >
         +
       </button>
       <button
-        className="flex h-12 w-12 items-center justify-center rounded-full bg-white text-2xl text-[#0a0a40] shadow-lg hover:bg-gray-100"
+        className="sg-zoomMap-out"
         aria-label="Alejar"
         onClick={onZoomOut}
       >

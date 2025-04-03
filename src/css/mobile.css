@@ -25,14 +25,17 @@
     justify-content: flex-start;
     align-items: center;
 
-    bottom: auto;
-    top: 1rem; /* Reduce la distancia desde la parte superior */
-    left: auto;
+    bottom: 0.4rem;
     right: 0.5rem; /* Reduce la distancia desde la derecha */
 
-
-    position: absolute;
+    position: fixed;
   }   
+
+  .sg-zoomMap-in, .sg-zoomMap-out {
+    width: 1.2em;
+    height: 1.2em;
+    font-size: small;
+  }
 
   .sg-dropdown-contentBuilder{
     bottom: var(--dropDown-botton);
@@ -102,13 +105,132 @@
     background-color: #5a2cff;
   }
 
+  .sg-headerInfo-builder {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: initial;
+  justify-content: space-around;
+  align-items: center;
+
+  position: fixed;
+  top: 0; /* Lo pega a la parte superior */
+  }
+
+  .sg-headerInfo-builder__left {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    flex-shrink : 1;
+  }
+
+  .sg-headerInfo-builder__right {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  .sg-headerLogin-button {
+    display: flex;
+    flex-direction: row;
+    gap: 0.1rem; /* Reduce el gap */
+    padding: 0.1rem 0.3rem; /* Reduce el padding */
+    
+    border-radius: 0.5rem; /* Reduce el border-radius */
+
+    transition: background-color 0.3s;
+    transition: color 0.4s;
+
+    transform: scale(.4); /* Reduce el tamaño del header */
+  }
+
+  /******************************* Main-Dropdown ************************************/
+  /******************************* MOBILE **************************************/
+
+  .sg-dropDownInfo-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+    padding: 0.25rem; /* Reduce el padding */
+    margin: 0.25rem; /* Reduce el margen */
+    border-radius: 3px; /* Reduce el border-radius */
+    width:90%; /* Ocupa casi todo el ancho */
+  }
+
+  .sg-dropDownInfo-contentHorario{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+    padding-top: .1rem; /* Reduce el padding */
+
+    font-size: x-small; /* Reduce el tamaño de la fuente */
+  }
+
+  .sg-dropDownInfo-contentHoras{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+
+    gap: .1rem;
+    
+    border-radius: .3rem; /* Reduce el border-radius */
+
+    padding: .1rem; /* Reduce el padding */
+  }
+
+  .sg-dropDownInfo-contentAulas{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    min-height: 6%;
+
+    padding-bottom: .05rem; /* Reduce el padding */
+  }
+
+  .sg-dropDown-contentAulas{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 4%;
+    cursor: pointer;
+
+    align-content: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+
+    overflow-y: auto;
+    max-height: 50px; /* Reduce la altura máxima */
+  }
+
+  .button-group {
+    display: flex;
+    gap: 0.1rem; /* Reduce el gap */
+    margin-bottom: 0.1rem; /* Reduce el margen */
+  }
+
+  .button-group button {
+    padding: 0.1rem 0.3rem; /* Reduce el padding */
+    border: 1px solid #5a2cff;
+    border-radius: 5rem;
+    cursor: pointer;
+    font-size: x-small; /* Reduce el tamaño de la fuente */
+  }
+
 }
 
 /* Móvil Horizontal */
-@media (orientation: landscape) {
+/* @media (orientation: landscape) {
   .main { display: flex; }
 
-  /* .sg-dropdown-contentBuilder {
+  .sg-dropdown-contentBuilder {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -118,7 +240,7 @@
     right: 0.5%;
     height: 75%;
     width: 20%;
-  } */
+  } 
 
   .sg-zoomMap {
     display: flex;
@@ -127,13 +249,13 @@
     align-items: center;
     bottom: 1.5rem;
     left: 1rem;
-    position: fixed; /* Fijo al hacer scroll */
+    position: fixed; 
   }
 
   main{
     background-color: #2cff61;
   }
-}
+} */
 
 
 /******************************* Main-Zoom ************************************/
@@ -144,122 +266,3 @@
 /******************************* Main-Header ************************************/
 /******************************* MOBILE **************************************/
 
-.sg-headerInfo-builder {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: initial;
-  justify-content: space-around;
-  align-items: center;
-
-  position: fixed;
-  top: 0; /* Lo pega a la parte superior */
-
-}
-
-.sg-headerInfo-builder__left {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-  flex-shrink : 1;
-}
-
-.sg-headerInfo-builder__right {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-
-}
-
-.sg-headerLogin-button {
-  display: flex;
-  flex-direction: row;
-  gap: 0.1rem; /* Reduce el gap */
-  padding: 0.1rem 0.3rem; /* Reduce el padding */
-  
-  border-radius: 0.5rem; /* Reduce el border-radius */
-
-  transition: background-color 0.3s;
-  transition: color 0.4s;
-
-  transform: scale(.4); /* Reduce el tamaño del header */
-}
-
-/******************************* Main-Dropdown ************************************/
-/******************************* MOBILE **************************************/
-
-.sg-dropDownInfo-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-
-  padding: 0.25rem; /* Reduce el padding */
-  margin: 0.25rem; /* Reduce el margen */
-  border-radius: 3px; /* Reduce el border-radius */
-  width:90%; /* Ocupa casi todo el ancho */
-}
-
-.sg-dropDownInfo-contentHorario{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-
-  padding-top: .1rem; /* Reduce el padding */
-
-  font-size: x-small; /* Reduce el tamaño de la fuente */
-}
-
-.sg-dropDownInfo-contentHoras{
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
-
-  gap: .1rem;
-  
-  border-radius: .3rem; /* Reduce el border-radius */
-
-  padding: .1rem; /* Reduce el padding */
-}
-
-.sg-dropDownInfo-contentAulas{
-  display: flex;
-  flex-direction: row;
-  position: relative;
-  min-height: 6%;
-
-  padding-bottom: .05rem; /* Reduce el padding */
-}
-
-.sg-dropDown-contentAulas{
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  min-height: 4%;
-  cursor: pointer;
-
-  align-content: flex-start;
-  justify-content: flex-start;
-  width: 100%;
-
-  overflow-y: auto;
-  max-height: 50px; /* Reduce la altura máxima */
-}
-
-.button-group {
-  display: flex;
-  gap: 0.1rem; /* Reduce el gap */
-  margin-bottom: 0.1rem; /* Reduce el margen */
-}
-
-.button-group button {
-  padding: 0.1rem 0.3rem; /* Reduce el padding */
-  border: 1px solid #5a2cff;
-  border-radius: 5rem;
-  cursor: pointer;
-  font-size: x-small; /* Reduce el tamaño de la fuente */
-}

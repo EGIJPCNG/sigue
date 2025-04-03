@@ -1,5 +1,3 @@
-/******************************* Main-Zoom ************************************/
-/******************************* TABLET **************************************/
 /* Tablet Vertical */
 @media (orientation: portrait) {
   main { padding: 20px; }
@@ -77,9 +75,6 @@
   max-height: 100px;
 }
 
-
-
-
 }
 
 /* Tablet Horizontal */
@@ -109,6 +104,8 @@
 
   }
 
+  /******************************* Main-Header ************************************/
+  /******************************* TABLET **************************************/
   .sg-headerInfo-builder {
     display: flex;
     flex-direction: row;
@@ -155,6 +152,8 @@
     display: flex;
     flex-direction: row;
   }
+
+  /* GENERAL COMPONENTS */
 
   svg {
     width: var(--svg-width);
@@ -205,6 +204,9 @@
     transform: scale(50%);
   }
 
+  /******************************* Main-Dropdown ************************************/
+  /******************************* TABLET **************************************/
+
   /* Afecta a movil*/
   .sg-dropdown-contentBuilder {
     display: flex;
@@ -214,6 +216,7 @@
     position: fixed;
     top: 15%;
     right: 0.5%;
+    bottom: 3.0%;
     height: auto;
     width: auto;
   }
@@ -240,38 +243,49 @@
   position: relative;
 }
 
+.sg-dropDown-contentAulas {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-height: 6%;
+  cursor: pointer;
+  align-content: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  
+  overflow-y: auto;
+  max-height: 150px;
+}
+
 button.text-medium, .select-filter {
   width: auto;
   height: 1.75rem;
 }
 
-}
+/******************************* Main-Zoom ************************************/
+/******************************* TABLET **************************************/
 
 .sg-zoomMap {
     display: flex;
-    flex-direction: row; /* Cambiado a row para alinear horizontalmente */
+    flex-direction: column; /* Cambiado a row para alinear horizontalmente */
     justify-content: flex-start; /* Alinea los elementos al inicio */
     align-items: center;
-    padding: 0.5rem;
-
-    bottom: auto; /* Elimina la posición bottom */
-    top: 1.5rem; /* Lo posiciona en la parte superior */
-    left: auto; /* Elimina la posición left */
-    right: 1rem; /* Lo posiciona en la esquina derecha */
-    gap: 0.35rem;
-
-    border-radius: 1.5rem;
-
     position: fixed;
+
+    left: auto; /* Elimina la posición left */
+    bottom: 1em;
 }
 
-/******************************* Main-Header ************************************/
-/******************************* TABLET **************************************/
+.sg-zoomMap-in, .sg-zoomMap-out {
+    width: 1.2em;
+    height: 1.2em;
+    font-size: small;
+}
 
 
+}
 
-/******************************* Main-Dropdown ************************************/
-/******************************* TABLET **************************************/
+
 
 
 .button-group {

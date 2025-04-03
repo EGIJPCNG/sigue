@@ -2,9 +2,9 @@
 
 .sg-zoomMap {
     background-color: rgba(51, 51, 51, 0.25); /* Ajuste de opacidad */
-    padding: 0.5rem;
+    padding: 0.9em;
     gap: 0.35rem;
-    border-radius: 1.5rem;
+    border-radius: 1.5em;
 }
 
 .sg-zoomMap button {
@@ -23,20 +23,20 @@
 
 .sg-headerInfo-builder {
     color: aliceblue;
-    padding: 1rem;
+    padding: .5rem;
     border-radius: 1.5rem;
 }
 
 .sg-headerInfo-builder__left,
 .sg-headerInfo-builder__right {
     border: 2px solid rgba(240, 248, 255, 0.425);
-    padding: 0.25rem;
+    padding: 0.25em;
     border-radius: 1.5rem;
 }
 
 .sg-headerInfo-builder__right {
     gap: 0.1rem;
-    padding: 0.25rem 0.75rem;
+    padding: 0.5em;
 }
 
 .sg-headerLogin-button {
@@ -51,8 +51,8 @@
 }
 
 .sg-headerLogin-button:hover {
-    background-color: #8400ff;
-    color: greenyellow;
+    background-color: #8400ffa2;
+    color: rgb(0, 247, 255);
 }
 
 .sg-button-search {
@@ -88,8 +88,8 @@
 .sg-dropdown-contentBuilder {
     background-color: rgba(51, 51, 51, 0.35); /* Ajuste de opacidad */
     color: white;
-    padding: 0.5%;
-    gap: 0.5rem;
+    padding: 1em 0.75em;
+    gap: 0.1em;
     border-radius: 0.4rem;
 }
 
@@ -176,4 +176,61 @@
 
 .option-filter {
     background-color: #5a2cff;
+}
+
+.sg-zoomMap-in, .sg-zoomMap-out{
+    /* flex h-12 w-12 items-center justify-center rounded-full bg-white text-2xl text-[#0a0a40] shadow-lg hover:bg-gray-100 */
+    border-radius: 3em;
+    border: none;
+    color:black;
+    cursor: pointer;
+}
+
+.sg-zoomMap-in:hover, .sg-zoomMap-out:hover{
+    color: blue;
+    font-size: 150%;
+}
+
+.sg-dropDownOption-content{
+    gap: .5em;
+}
+
+.sg-dropDownOption-buttonOption{
+    gap: .5em;
+}
+
+.sg-dropDownOption-infoOption{
+    /*  */
+}
+
+.sg-buttonOption {
+    color:white;
+    background-color: gray;
+    
+    border: none;
+    border-radius: .5em;
+
+    &:hover{
+        background-color:rgb(141, 141, 141);
+    }
+
+    cursor: pointer;
+}
+
+.sg-buttonInfo{
+    color:rgb(0, 159, 187);
+    background-color: rgb(107, 236, 236);
+    
+    border: none;
+    border-radius: .5em;
+
+    &:hover{
+        background-color: rgb(114, 255, 255);
+    }
+
+    cursor: pointer;
+}
+
+.sg-buttonOption:active{
+    background-color: rgb(0, 187, 187);
 }
