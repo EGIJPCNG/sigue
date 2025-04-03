@@ -10,9 +10,9 @@
     --background-start-rgb: 30, 27, 75;
     --background-end-rgb: 20, 17, 45;
 
-    width: 500%;
-    height: 500%;
-
+    /* Ajusta valores extremos */
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -26,5 +26,9 @@
   :root {
     /* Ajusta los estilos según sea necesario para móviles */
     font-size: 16px; /* Por ejemplo, ajusta el tamaño de la fuente */
+
+    /* Asegura consistencia en el diseño */
+    width: 100%;
+    height: auto;
   }
 }

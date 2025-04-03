@@ -1,22 +1,20 @@
+/* Desktop */
+@media screen and (min-width: 1200px) {
+  body { font-size: 18px; }
+}
+
 /******************************* Main-Zoom ************************************/
 /******************************* DESKTOP **************************************/
 
-.sg-zoomMap { /* Clase para el contenedor de los botones de zoom (posicionar) */
+.sg-zoomMap {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    padding: .5rem;
-
-    /* Posiciona el contenedor en la esquina inferior derecha */
     bottom: 1.5rem;
     left: 1rem;
-    position: absolute;
-    gap: .35rem;
-
-    border-radius: 1.5rem;
-
-    position: fixed; /* O fixed si quieres que se quede fijo al hacer scroll */
+    position: fixed; /* Fijo al hacer scroll */
+    z-index: 10; /* Asegura que esté por encima de otros elementos */
 }
 
 /******************************* Main-Header ************************************/
@@ -24,54 +22,32 @@
 
 .sg-headerInfo-builder {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-
-  padding: 1rem;
   position: fixed;
   top: 1.5rem;
-
   width: 100%;
-  border-radius: 1.5rem;
+  z-index: 20; /* Evita conflictos con otros elementos */
 }
 
-.sg-headerInfo-builder__left {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-  flex-shrink : 1;
-
-  padding: .25rem;
-
-  border-radius: 1.5rem;
-}
-
+.sg-headerInfo-builder__left,
 .sg-headerInfo-builder__right {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
 
-  gap: 0.1rem;
-  padding: .25rem 0.75rem;
-
-  border-radius: 1.5rem;
+.sg-headerInfo-builder__left {
+  position: relative;
+  flex-shrink: 1;
 }
 
 .sg-headerLogin-button {
   display: flex;
   flex-direction: row;
-  gap: 0.5rem;
-  padding: 0.5rem 1rem;
-  
-  border-radius: 1.5rem;
-
-  transition: background-color 0.3s;
-  transition: color 0.4s;
+  transition: background-color 0.3s, color 0.4s;
 }
 
 .sg-button-search {
@@ -81,128 +57,80 @@
   transform: translateY(-50%);
 }
 
-.sg-headerInfo-timeDisplay {
-  gap: 0.5rem;
-  display: flex;
-  align-items: center;
-}
-
 .sg-headerInfo-divider {
   width: 1px;
   height: 1.5rem;
-  margin: 0 1rem;
+  background-color: #ccc; /* Asegura visibilidad */
 }
 
 .sg-input-bgTransparent {
   border: none;
+  background-color: transparent; /* Evita conflictos visuales */
 }
 
 /******************************* Main-Dropdown ************************************/
 /******************************* DESKTOP **************************************/
 
 .sg-dropdown-contentBuilder {
-  /* Modelo de diseño dinamico*/
   display: flex;
-  flex-direction: column; /*Alinear elementos hijos*/
-  justify-content: flex-start; /*Alinear elementos hijos*/
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
-
-  /* Espaciado interno */
-  padding: 1rem auto;
-  
-
-  position: fixed; /* O fixed si quieres que se quede fijo al hacer scroll */
-  top: 15%; /* Ajusta la posición vertical */
-  right: .5%; /* Lo alinea al lado derecho */
-  height: 75%; /* Ajusta la altura */
-  width: 20%; /* Ajusta el ancho */
+  position: fixed;
+  top: 15%;
+  right: 0.5%;
+  height: 75%;
+  width: 20%;
+  padding: 5rem;
+  overflow-y: auto; /* Evita desbordamientos */
+  z-index: 15; /* Asegura que esté por encima de otros elementos */
 }
 
-.sg-dropDownInfo-content {
+.sg-dropDownInfo-content,
+.sg-dropDownInfo-contentHorario {
   display: flex;
-  flex-direction: column; /*Alinear elementos hijos*/
-  justify-content: flex-end; /*Alinear elementos hijos*/
+  flex-direction: column;
+  justify-content: flex-end;
   align-items: center;
-
-  padding: 1rem;
-  margin: 1rem;
-  border-radius: 5px;
 }
 
-/* Horario */
-.sg-dropDownInfo-contentHorario{
+.sg-dropDownInfo-contentHoras,
+.sg-dropDownInfo-contentAulas {
   display: flex;
-  flex-direction: column; /*Alinear elementos hijos*/
-  justify-content: flex-end; /*Alinear elementos hijos*/
+  flex-direction: row;
+  justify-content: flex-end;
   align-items: center;
-
-  padding-top: .5rem;
-
-  font-size: small;
 }
 
-.sg-dropDownInfo-contentHoras{
-  display: flex;
-  flex-direction: row; /*Alinear elementos hijos*/
-  justify-content: flex-end; /*Alinear elementos hijos*/
-  align-items: center;
-
-  gap: .5rem;
-  
-  border-radius: .5rem;
-
-  padding: .5rem;
-}
-
-.sg-dropDownInfo-contentAulas{
-  display: flex;
-  flex-direction: row; /*Alinear elementos hijos*/
+.sg-dropDownInfo-contentAulas {
   position: relative;
   min-height: 8%;
-
-  padding-bottom: .35rem;
 }
 
-.sg-dropDown-contentAulas{
+.sg-dropDown-contentAulas {
   display: flex;
-  flex-direction: column; /*Alinear elementos hijos*/
+  flex-direction: column;
   position: relative;
   min-height: 6%;
   cursor: pointer;
-
-  align-content: flex-start; /* Cambio a flex-start para alinear al inicio */
-  justify-content: flex-start; /* Cambio a flex-start para alinear al inicio */
+  align-content: flex-start;
+  justify-content: flex-start;
   width: 100%;
-
-  padding: .1rem; /*Espacio del contenedor*/
-  margin: .2rem; /*Espacio entre elementos externos*/
-  gap: .2rem;  /*Espacio entre elementos internos*/
-
-  border-radius: 5px;
-
-  overflow-y: auto; /* Agrega scroll vertical cuando el contenido excede el tamaño */
-  max-height: 150px; /* Ajusta la altura máxima según sea necesario */
+  overflow-y: auto;
+  max-height: 150px;
 }
 
-/* Estilos para el grupo de botones */
 .button-group {
   display: flex;
-  gap: 0.5rem; /* Espacio entre los botones */
-  margin-bottom: 0.5rem;
 }
 
-/* Estilos para los botones */
 .button-group button {
-  padding: 0.5rem 1rem;
-  border: 1px solid #5a2cff;
-  border-radius: 5rem;
   cursor: pointer;
 }
 
 /******************************* Main-Map ************************************/
 /******************************* DESKTOP **************************************/
 
-/* filepath: src/main-global.css */
 .sg-map-container {
   display: flex;
   flex-direction: row;
@@ -210,20 +138,18 @@
   align-items: center;
   position: absolute;
   align-content: center;
-
   width: 200%;
   height: 400%;
-
+  overflow: hidden; /* Evita desbordamientos */
 }
 
 .sg-mainMapInteractive {
   position: absolute;
-
   width: 100%;
   height: 200%;
-
   background-repeat: no-repeat;
   background-size: cover;
   transform-origin: center;
-  transition: transform 0.9s ease-out; /* Agrega una transición suave */
+  transition: transform 0.9s ease-out;
+  z-index: 5; /* Asegura que esté detrás de otros elementos */
 }

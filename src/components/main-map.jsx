@@ -1,9 +1,10 @@
-import {React} from 'react';
+import React from 'react';
 
 export function MainMap() {
+
   return (
-    <canvas>
+    <canvas className='sg-map-container'>
       
     </canvas>
-  )
-} 
+  );
+}

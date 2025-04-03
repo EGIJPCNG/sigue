@@ -1,13 +1,16 @@
-.sg-input::placeholder {
-  color: white;
-  opacity: 0.7;
+/* Fuente General */
+div {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.15rem;
+
+  user-select: none;
 }
 
 .sg-button {
   background-color: transparent;
-  color: white;
+  color: white; 
   border: none;
-  padding: 0.75rem;
+  padding: 0.4rem;
   cursor: pointer;
 }
 
@@ -16,18 +19,10 @@
   border-radius: 1.5rem;
 }
 
-div {
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.15rem;
-
-  user-select: none;
-}
-
 .sg-input  {
   display: flex;
   align-items: center;
-  
-  width: 100%;
+
   padding-right: 2.5rem;
   padding: 0.75rem 1rem;
   
@@ -37,16 +32,20 @@ div {
   outline: thick;
 }
 
+.sg-input::placeholder {
+  color: white;
+  opacity: 0.7;
+}
+
 .sg-output{
   display: flex;
   align-items: center;
+
   
-  width: 100%;
   padding-right: 2.5rem;
-  padding: 0.75rem 1rem;
+  padding: 0.75em ;
   
   color: white;
-  font-size: 1rem;
 
   border: 2px solid none;
   border-radius: 1.5rem;

@@ -1,0 +1,288 @@
+/******************************* Main-Zoom ************************************/
+/******************************* TABLET **************************************/
+/* Tablet Vertical */
+@media (orientation: portrait) {
+  main { padding: 20px; }
+
+.sg-dropdown-contentBuilder {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: fixed;
+  top: 15%;
+  right: 0.5%;
+  height: auto;
+  width: auto;
+  padding: 3.5rem;
+}
+
+.sg-dropDownInfo-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border-radius: 5px;
+  width: auto; /* Ajusta el ancho para que quepan dos elementos por fila */
+}
+
+.sg-dropDownInfo-contentHorario{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+
+  padding-top: .25rem;
+
+  font-size: small;
+}
+
+.sg-dropDownInfo-contentHoras{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+
+  gap: .25rem;
+  
+  border-radius: .5rem;
+
+  padding: .25rem;
+}
+
+.sg-dropDownInfo-contentAulas{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  min-height: 8%;
+
+  padding-bottom: .15rem;
+}
+
+.sg-dropDown-contentAulas{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-height: 6%;
+  cursor: pointer;
+
+  align-content: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+
+  overflow-y: auto;
+  max-height: 100px;
+}
+
+
+
+
+}
+
+/* Tablet Horizontal */
+@media (orientation: landscape) {
+  main { padding: 0px; }
+
+  :root{
+    --font-size-small: 0.8rem;
+    --font-size-medium: 0.6rem; /* Ajustado para mayor consistencia */
+    --font-size-large: 1rem; /* Ajustado para mayor consistencia */
+
+    --container-padding: 0.5rem; /* Ajustado para evitar valores nulos */
+    --container-margin: 0.5rem; /* Ajustado para evitar valores nulos */
+
+    --button-padding: 0.25rem; /* Ajustado para mayor claridad */
+    --button-border-radius: 0.5rem; /* Ajustado para mayor claridad */
+    
+    --contain-width: auto;
+    --contain-height: 1.75em; /* Corregido de "heigth" a "height" */
+
+    --dropDown-top: 10%;
+    --dropDown-bottom: auto; /* Corregido de "botton" a "bottom" */
+
+    --header-width: 100%;
+    --headerInfo-builder: 1em;
+    --svg-width: 1em;
+
+  }
+
+  .sg-headerInfo-builder {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 0.5rem; /* Reduce el padding */
+    position: fixed;
+    top: 0; /* Lo pega a la parte superior */
+
+    min-height: var(--contain-height); /* Corregido de "heigth" a "height" */
+    border-radius: 0; /* Elimina el border-radius */
+  }
+
+  .sg-headerInfo-builder__left {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    flex-shrink : 1;
+
+    padding: .1rem; /* Reduce el padding */
+    border-radius: 1rem; /* Reduce el border-radius */
+
+    height:var(--contain-height);
+    width: var(--contain-width);
+
+  }
+
+  .sg-headerInfo-builder__right {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    height: var(--contain-height);
+    width: var(--contain-width); /* Corregido de "widt" a "width" */
+
+  }
+
+  .sg-headerLogin-button {
+    display: flex;
+    flex-direction: row;
+  }
+
+  svg {
+    width: var(--svg-width);
+  }
+
+  .sg-headerInfo-builder {
+    height: var(--contain-height);
+    width: var(--header-width);
+  }
+
+  body {
+    font-size: var(--font-size-medium);
+  }
+
+  h1, h2, h3 {
+    font-size: var(--font-size-large);
+    text-align: center;
+  }
+
+  p, span {
+    font-size: var(--font-size-small);
+  }
+
+  main {
+    padding: var(--container-padding);
+    margin: var(--container-margin);
+  }
+
+  .input, .input-button, .output-button {
+    padding: var(--button-padding);
+    border-radius: var(--button-border-radius);
+  }
+
+  .text-small, time, input::placeholder {
+    font-size: var(--font-size-small);
+  }
+
+  .text-medium {
+    font-size: var(--font-size-medium);
+  }
+
+  .text-large {
+    font-size: var(--font-size-large);
+  }
+
+  /* PRUEBA DE ESCALAS */
+  .material-symbols-outlined{
+    transform: scale(50%);
+  }
+
+  /* Afecta a movil*/
+  .sg-dropdown-contentBuilder {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+    top: 15%;
+    right: 0.5%;
+    height: auto;
+    width: auto;
+  }
+
+  .sg-dropDownInfo-contentHorario{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.sg-dropDownInfo-contentHoras{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+
+  height: 1em;
+}
+
+.sg-dropDownInfo-contentAulas{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+button.text-medium, .select-filter {
+  width: auto;
+  height: 1.75rem;
+}
+
+}
+
+.sg-zoomMap {
+    display: flex;
+    flex-direction: row; /* Cambiado a row para alinear horizontalmente */
+    justify-content: flex-start; /* Alinea los elementos al inicio */
+    align-items: center;
+    padding: 0.5rem;
+
+    bottom: auto; /* Elimina la posición bottom */
+    top: 1.5rem; /* Lo posiciona en la parte superior */
+    left: auto; /* Elimina la posición left */
+    right: 1rem; /* Lo posiciona en la esquina derecha */
+    gap: 0.35rem;
+
+    border-radius: 1.5rem;
+
+    position: fixed;
+}
+
+/******************************* Main-Header ************************************/
+/******************************* TABLET **************************************/
+
+
+
+/******************************* Main-Dropdown ************************************/
+/******************************* TABLET **************************************/
+
+
+.button-group {
+  display: flex;
+  gap: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.button-group button {
+  padding: 0.25rem 0.5rem;
+  border: 1px solid #5a2cff;
+  border-radius: 5rem;
+  cursor: pointer;
+}
