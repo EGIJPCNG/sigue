@@ -24,7 +24,7 @@ export function MainHeader() {
     <article className="sg-headerInfo-builder">
 
       <form className='sg-headerInfo-builder__left'>
-        <input className='sg-input sg-input-bgTransparent text-small sg-header-font' type="text" placeholder="Buscar un edificio-aula" />
+        <input className='sg-input sg-input-bgTransparent text-small sg-header-font' type="text" placeholder="edificio-aula" />
         <button className='sg-button sg-button-search sg-button-primary'>
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" className="lucide lucide-search"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg>
         </button>

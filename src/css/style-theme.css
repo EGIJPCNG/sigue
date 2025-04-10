@@ -43,6 +43,7 @@
     --dropdown-contentAulas-padding: var(--dropdown-contentAulas-padding);
     --dropdown-svg-width: var(--dropdown-svg-width);
     --dropdown-contentAula-padding: var(--dropdown-contentAula-padding);
+    --dropdown-children-display: var(--dropdown-children-display);
 
     --aula-libre-border-color: rgb(0, 255, 42);
     --aula-libre-bg-color: rgba(14, 124, 0, 0.226);
@@ -134,6 +135,10 @@ span.sg-header-font {
 }
 
 /******************************* Main-Dropdown ************************************/
+
+button.sg-buttonInfo {
+    display: var(--dropdown-children-display);
+}
 
 .sg-dropdown-contentBuilder {
     background-color: var(--dropdown-bg-color);
@@ -273,6 +278,10 @@ time.sg-header-font, span.sg-header-font, button.sg-header-font{
 input.sg-header-font {
     font-size: var(--header-font-size);
     padding-right: var(--header-content-padding);
+}
+
+input.sg-header-font::placeholder{
+    display: var(--header-children-display);
 }
 
 button, select {

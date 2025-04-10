@@ -17,8 +17,9 @@
     --divider-height: 1.2rem;
     --divider-color: #ccc;
     --input-bg-color: transparent;
-    --dropdown-top: 20%;
-    --dropdown-right: 0.5%;
+    --dropdown-top: 10%;
+    /* --dropdown-right: 0.5%; */
+    --dropdown-left: 0.5%;
     --dropdown-z-index: 15;
     --map-container-overflow: hidden;
     --map-interactive-z-index: 5;
@@ -27,7 +28,7 @@
 
     /* FONT-SIZE */
     --zoom-button-font-size: 1.6rem;
-    --header-font-size: 0.45rem;
+    --header-font-size: 0.5rem;
     --dropdown-fontH1-size: 0.65rem;
     --dropdown-fontTime-size: 0.65rem;
     --button-font-size: 0.5rem;
@@ -44,10 +45,11 @@
     --header-content-padding: 0.1em;
 
     /* WIDTH and HEIGTH */
-    --dropdown-svg-width: 8px;
+    --dropdown-svg-width: 12px;
 
     /* DISPLAY */
     --header-children-display: none;
+    --dropdown-children-display: none;
   }
 }
 
@@ -99,6 +101,7 @@
     --dropdown-svg-width: 30px;
 
     /* DISPLAY */
-    --header-children-display: none;
+    --header-children-display: flex;
+    --dropdown-children-display: none;
   }
 }

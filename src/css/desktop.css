@@ -53,6 +53,10 @@
 
     /* WIDTH and HEIGTH */
     --dropdown-svg-width: 15px;
+
+    /* DISPLAY */
+    --header-children-display: flex;
+    --dropdown-children-display: flex;
   }
   
 /* } */
