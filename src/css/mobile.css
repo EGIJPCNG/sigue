@@ -22,12 +22,12 @@
     --dropdown-z-index: 15;
     --map-container-overflow: hidden;
     --map-interactive-z-index: 5;
-    --button-option-size: 2.5em;
+    --button-option-size: 4.5em;
     --button-info-height: 1.2em;
 
     /* FONT-SIZE */
     --zoom-button-font-size: 1.6rem;
-    --header-font-size: 0.9rem;
+    --header-font-size: 0.45rem;
     --dropdown-fontH1-size: 0.65rem;
     --dropdown-fontTime-size: 0.65rem;
     --button-font-size: 0.5rem;
@@ -41,8 +41,13 @@
     --dropdown-output-padding: 0.2em;
     --dropdown-contentAula-padding: 0em;
 
+    --header-content-padding: 0.1em;
+
     /* WIDTH and HEIGTH */
-    --dropdown-svg-width: 15px;
+    --dropdown-svg-width: 8px;
+
+    /* DISPLAY */
+    --header-children-display: none;
   }
 }
 
@@ -69,7 +74,7 @@
     --dropdown-z-index: 15;
     --map-container-overflow: hidden;
     --map-interactive-z-index: 5;
-    --button-option-size: 2.2em;
+    --button-option-size: 4.2em;
     --button-info-height: 1em;
 
     /* FONT-SIZE */
@@ -77,7 +82,7 @@
     --header-font-size: 0.85rem;
     --dropdown-fontH1-size: 0.6rem;
     --dropdown-fontTime-size: 0.6rem;
-    --button-font-size: 0.45rem;
+    --button-font-size: 0.5em;
     --info-text-font-size: 0.7rem;
     --option-font-size: 0.65rem;
 
@@ -88,7 +93,12 @@
     --dropdown-output-padding: 0.15em;
     --dropdown-contentAula-padding: 0em;
 
+    --header-content-padding: 0.5em;
+
     /* WIDTH and HEIGTH */
-    --dropdown-svg-width: 15px;
+    --dropdown-svg-width: 30px;
+
+    /* DISPLAY */
+    --header-children-display: none;
   }
 }

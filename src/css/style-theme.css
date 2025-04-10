@@ -28,6 +28,9 @@
     --header-padding: 0.5rem;
     --header-border-radius: 1.5rem;
     --header-divider-color: rgba(255, 255, 255, 0.3);
+    --header-font-size: var(--header-font-size);
+    --header-content-padding: var(--header-content-padding);
+    --header-children-display: var(--header-children-display);
 
     --dropdown-bg-color: rgba(51, 51, 51, 0.35);
     --dropdown-padding: 1em 0.75em;
@@ -123,7 +126,11 @@ article.sg-zoomMap {
 }
 
 svg {
-    width: 15px;
+    width: var(--dropdown-svg-width);
+}
+
+span.sg-header-font {
+    display: var(--header-children-display);
 }
 
 /******************************* Main-Dropdown ************************************/
@@ -255,6 +262,17 @@ h1.sg-dropDown-h1 {
 time, span {
     color: white;
     font-size: var(--dropdown-fontTime-size);  
+}
+
+/* --header-font-size */
+time.sg-header-font, span.sg-header-font, button.sg-header-font{
+    font-size: var(--header-font-size);
+    
+}
+
+input.sg-header-font {
+    font-size: var(--header-font-size);
+    padding-right: var(--header-content-padding);
 }
 
 button, select {

@@ -24,14 +24,14 @@ export function MainHeader() {
     <article className="sg-headerInfo-builder">
 
       <form className='sg-headerInfo-builder__left'>
-        <input className='sg-input sg-input-bgTransparent text-small' type="text" placeholder="Buscar un edificio-aula" />
+        <input className='sg-input sg-input-bgTransparent text-small sg-header-font' type="text" placeholder="Buscar un edificio-aula" />
         <button className='sg-button sg-button-search sg-button-primary'>
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" className="lucide lucide-search"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg>
         </button>
       </form>
 
       <div className='sg-headerInfo-builder__right'>
-          <time className='sg-headerInfo-timeDisplay'>
+          <time className='sg-headerInfo-timeDisplay sg-header-font'>
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" 
                   viewBox="0 0 24 24" fill="none" stroke="currentColor"
                   className="lucide lucide-clock icon">
@@ -52,9 +52,9 @@ export function MainHeader() {
           </button>
       </div>
 
-      <div className='sg-headerLogin-button sg-button-icon'>
+      <div className='sg-headerLogin-button sg-button-icon sg-header-font'>
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" className="lucide lucide-user"><path d="M3 21v-2a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
-        <span>Iniciar sesión</span>
+        <span className='sg-header-font'>Iniciar sesión</span>
       </div>
 
     </article>
