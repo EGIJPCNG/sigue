@@ -1,4 +1,5 @@
 // filepath: c:\Users\Usuario\projects\sigue\src\components\main-zoom.jsx
+import "../css/components/main-zoom.css";
 
 export function MainZoom({ onZoomIn, onZoomOut }) {
   return (

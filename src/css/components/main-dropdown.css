@@ -1,0 +1,99 @@
+/******************************* Main-Dropdown ************************************/
+/******************************* DESKTOP **************************************/
+
+.sg-dropdown-contentBuilder {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: var(--component-position);
+    top: var(--dropdown-top);
+    right: var(--dropdown-right);
+    height: auto;
+    width: auto;
+    z-index: var(--dropdown-z-index);
+}
+
+.sg-dropDownInfo-content,
+.sg-dropDownInfo-contentHorario {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+.sg-dropDownInfo-contentHoras{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.sg-dropDownInfo-contentAulas {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: baseline
+}
+
+.sg-dropDownInfo-contentAulas {
+    position: relative;
+    min-height: 8%;
+}
+
+.sg-dropDown-contentAulas {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 6%;
+    cursor: pointer;
+    align-content: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    overflow-y: auto;
+    max-height: var(--dropdown-max-height);
+}
+
+.button-group {
+    display: flex;
+}
+
+.button-group button {
+    cursor: pointer;
+}
+
+/******************************************** DROPDOWN - OPTION  *********************************************/
+
+.sg-dropDownOption-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+}
+
+.sg-dropDownOption-buttonOption {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.sg-buttonOption {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: var(--button-option-size);
+    height: var(--button-option-size);
+}
+
+.sg-buttonInfo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: var(--button-info-height);
+}

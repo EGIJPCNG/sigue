@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import AulaButton from './button-aula';
+import "../css/components/main-dropDown.css"
 
 export function MainDropdown() {
   const [selectedOption, setSelectedOption] = useState('');
@@ -26,18 +27,18 @@ export function MainDropdown() {
     <article className="sg-dropdown-contentBuilder">
 
       <div className="sg-dropDownInfo-content">
-        <h1>Edificio N</h1>
+        <h1 className='sg-dropDown-h1'>Edificio N</h1>
         <div className="sg-dropDownInfo-contentHorario ">
           <span className='text-medium'>Horario</span>
-          <div className='sg-output'>
+          <div className='sg-dropDownInfo-hora sg-output'>
             <span className='sg-dropDownInfo-contentHoras'>
-              <time dateTime="" className='text-medium'>{hora}</time>
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                 viewBox="0 0 24 24" fill="none" stroke="currentColor" 
                 class="lucide lucide-clock icon">
                 <circle cx="12" cy="12" r="10"></circle>
                 <polyline points="12 6 12 12 16 14"></polyline>
               </svg>
+              <time dateTime="" className='text-medium'>{hora}</time>
             </span>
 
           </div>
@@ -73,7 +74,7 @@ export function MainDropdown() {
         </div>
       </div>
       
-      <h1>Opciones</h1>
+      <h1 className='sg-dropDown-h1'>Opciones</h1>
       <div className="sg-dropDownOption-content">
         <div className='sg-dropDownOption-buttonOption'>
           <button className="sg-buttonOption"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map h-full w-full text-white"><path d="M14.106 5.553a2 2 0 0 0 1.788 0l3.659-1.83A1 1 0 0 1 21 4.619v12.764a1 1 0 0 1-.553.894l-4.553 2.277a2 2 0 0 1-1.788 0l-4.212-2.106a2 2 0 0 0-1.788 0l-3.659 1.83A1 1 0 0 1 3 19.381V6.618a1 1 0 0 1 .553-.894l4.553-2.277a2 2 0 0 1 1.788 0z"></path><path d="M15 5.764v15"></path><path d="M9 3.236v15"></path></svg></button>

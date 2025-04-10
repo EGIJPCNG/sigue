@@ -1,0 +1,56 @@
+ /******************************* Main-Header ************************************/
+  /******************************* DESKTOP **************************************/
+
+  .sg-headerInfo-builder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    position: var(--component-position);
+    top: var(--component-top);
+    width: var(--component-width);
+    z-index: 20; /* Evita conflictos con otros elementos */
+  }
+
+  .sg-headerInfo-builder__left,
+  .sg-headerInfo-builder__right {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .sg-headerInfo-builder__left {
+    position: relative;
+    flex-shrink: 1;
+  }
+
+  .sg-headerInfo-timeDisplay {
+    display: flex;
+    align-items: center;
+  }
+
+  .sg-headerLogin-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transition: background-color 0.3s, color 0.4s;
+  }
+
+  .sg-button-search {
+    position: absolute;
+    top: 50%;
+    right: var(--component-gap);
+    transform: translateY(-50%);
+  }
+
+  .sg-headerInfo-divider {
+    width: 1px;
+    height: var(--divider-height);
+    background-color: var(--divider-color);
+  }
+
+  .sg-input-bgTransparent {
+    border: none;
+    background-color: var(--input-bg-color);
+  }

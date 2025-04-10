@@ -1,0 +1,19 @@
+  /******************************* Main-Zoom ************************************/
+  /******************************* DESKTOP **************************************/
+
+  .sg-zoomMap {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    bottom: var(--component-bottom);
+    left: var(--component-left);
+    right: var(--component-right);
+    position: var(--component-position);
+    z-index: var(--component-z-index);
+  }
+
+  .sg-zoomMap-in, .sg-zoomMap-out {
+    width: var(--button-size);
+    height: var(--button-size);
+  }

@@ -27,7 +27,6 @@ div {
   padding: 0.75rem 1rem;
   
   color: white;
-  font-size: 1rem;
 
   outline: thick;
 }
@@ -37,16 +36,36 @@ div {
   opacity: 0.7;
 }
 
-.sg-output{
-  display: flex;
-  align-items: center;
 
-  
-  padding-right: 2.5rem;
-  padding: 0.75em ;
-  
-  color: white;
+/************************************* Personalización del scroll *****************************************/
 
-  border: 2px solid none;
-  border-radius: 1.5rem;
+/* Estilo del contenedor del scrollbar */
+::-webkit-scrollbar {
+  width: 12px; /* Ancho del scroll vertical */
+  height: 12px; /* Altura del scroll horizontal */
+
+  margin-right: 0.5em;
 }
+
+/* Estilo del track (fondo del scrollbar) */
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1); /* Color del fondo */
+  border-radius: 0.5em; /* Bordes redondeados */
+}
+
+/* Estilo del thumb (barra que se mueve) */
+::-webkit-scrollbar-thumb {
+  background: none; /* Color de la barra */
+  border-radius: 0.5em; /* Bordes redondeados */
+  border: 2px solid var(--button-border-color); /* Espaciado entre el thumb y el track */
+}
+
+
+/* ::-webkit-scrollbar-thumb:hover { /*Color al pasar el mouse 
+  background: var(--button-hover-bg-color);
+ }  */
+
+/* Estilo del scrollbar en estado activo
+::-webkit-scrollbar-thumb:active {
+   background: var(--button-active-bg-color); Color al hacer clic 
+} */

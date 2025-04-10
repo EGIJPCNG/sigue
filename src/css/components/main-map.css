@@ -1,0 +1,25 @@
+  /******************************* Main-Map ************************************/
+  /******************************* DESKTOP **************************************/
+
+  .sg-map-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    align-content: center;
+    width: var(--map-width);
+    height: var(--map-height);
+    overflow: var(--map-container-overflow);
+  }
+
+  .sg-mainMapInteractive {
+    position: absolute;
+    width: 100%;
+    height: 200%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform-origin: center;
+    transition: transform var(--map-transform-duration) ease-out;
+    z-index: var(--map-interactive-z-index);
+  }

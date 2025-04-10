@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-
+import "../css/components/main-header.css"
 
 export function MainHeader() {
   const [currentTime, setCurrentTime] = useState(new Date());

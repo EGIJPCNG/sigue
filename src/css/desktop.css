@@ -1,192 +1,58 @@
 /* Desktop */
-@media screen and (min-width: 1200px) {
-  body { font-size: 18px; }
-}
+/* @media screen and (min-width: 1200px) { */
 
-/******************************* Main-Zoom ************************************/
-/******************************* DESKTOP **************************************/
+  :root {
+    --component-width: 100%;
+    --component-gap: 1rem;
+    --component-left: 1rem;
+    --component-top: 1.5rem;
+    --component-bottom: 1.5rem;
+    --component-position: fixed;
+    --component-z-index: 10;
+    --dropdown-max-height: 150px;
+    --map-width: 200%;
+    --map-height: 400%;
+    --map-transform-duration: 0.9s;
+    --button-size: 2em;
+    --divider-height: 1.5rem;
+    --divider-color: #ccc;
+    --input-bg-color: transparent;
+    --dropdown-top: 15%;
+    --dropdown-right: 0.5%;
+    --dropdown-z-index: 15;
+    --map-container-overflow: hidden;
+    --map-interactive-z-index: 5;
+    --button-option-size: 4em;
+    --button-info-height: 2em;
 
-.sg-zoomMap {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    bottom: 1.5rem;
-    left: 1rem;
-    position: fixed; /* Fijo al hacer scroll */
-    z-index: 10; /* Asegura que esté por encima de otros elementos */
-}
+    /* --zoom-button-font-size: 1rem;
 
-.sg-zoomMap-in, .sg-zoomMap-out {
-    width: 2em;
-    height: 2em;
-}
+    --header-font-size: 1.2rem;
+    --dropdown-font-size: 1rem;
+    --button-font-size: 1rem;
+    --info-text-font-size: 0.9rem;
+    --option-font-size: 0.85rem; */
 
-/******************************* Main-Header ************************************/
-/******************************* DESKTOP **************************************/
+    /* FONT-SIZE */
+    --zoom-button-font-size: 1rem;
+    --header-font-size: 1.2rem;
 
-.sg-headerInfo-builder {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  position: fixed;
-  top: 1.5rem;
-  width: 100%;
-  z-index: 20; /* Evita conflictos con otros elementos */
-}
-
-.sg-headerInfo-builder__left,
-.sg-headerInfo-builder__right {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.sg-headerInfo-builder__left {
-  position: relative;
-  flex-shrink: 1;
-}
-
-.sg-headerLogin-button {
-  display: flex;
-  flex-direction: row;
-  transition: background-color 0.3s, color 0.4s;
-}
-
-.sg-button-search {
-  position: absolute;
-  top: 50%;
-  right: 0.5rem;
-  transform: translateY(-50%);
-}
-
-.sg-headerInfo-divider {
-  width: 1px;
-  height: 1.5rem;
-  background-color: #ccc; /* Asegura visibilidad */
-}
-
-.sg-input-bgTransparent {
-  border: none;
-  background-color: transparent; /* Evita conflictos visuales */
-}
-
-/******************************* Main-Dropdown ************************************/
-/******************************* DESKTOP **************************************/
-
-.sg-dropdown-contentBuilder {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  position: fixed;
-  top: 15%;
-  right: 0.5%;
-  height: auto;
-  width: auto;
-  z-index: 15; /* Asegura que esté por encima de otros elementos */
-}
-
-.sg-dropDownInfo-content,
-.sg-dropDownInfo-contentHorario {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.sg-dropDownInfo-contentHoras,
-.sg-dropDownInfo-contentAulas {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.sg-dropDownInfo-contentAulas {
-  position: relative;
-  min-height: 8%;
-}
-
-.sg-dropDown-contentAulas {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  min-height: 6%;
-  cursor: pointer;
-  align-content: flex-start;
-  justify-content: flex-start;
-  width: 100%;
+    --dropdown-fontH1-size: .75rem;
+    --dropdown-fontTime-size: .75rem;
+    --button-font-size: .6rem;
   
-  overflow-y: auto;
-  max-height: 150px;
-}
+    --info-text-font-size: 0.9rem;
+    --option-font-size: 0.85rem;
 
-.button-group {
-  display: flex;
-}
+    /* GAP */
+    --dropdown-infoContent-gap: 0.1em;
 
-.button-group button {
-  cursor: pointer;
-}
+    /* PADDING */
+    --dropdown-output-padding: 0.35em;
+    --dropdown-contentAulas-padding: 0.35em;
 
-/******************************* Main-Map ************************************/
-/******************************* DESKTOP **************************************/
-
-.sg-map-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  position: absolute;
-  align-content: center;
-  width: 200%;
-  height: 400%;
-  overflow: hidden; /* Evita desbordamientos */
-}
-
-.sg-mainMapInteractive {
-  position: absolute;
-  width: 100%;
-  height: 200%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  transform-origin: center;
-  transition: transform 0.9s ease-out;
-  z-index: 5; /* Asegura que esté detrás de otros elementos */
-}
-
-/******************************************** DROPDOWN - OPTION  *********************************************/
-
-.sg-dropDownOption-content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-
-    position: relative;
-}
-
-.sg-dropDownOption-buttonOption{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-.sg-buttonOption {
-    width: 4em;
-    height: 4em;
-}
-
-.sg-buttonInfo{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-
-    width: 100%;
-    height: 2em;
-}
+    /* WIDTH and HEIGTH */
+    --dropdown-svg-width: 15px;
+  }
+  
+/* } */
