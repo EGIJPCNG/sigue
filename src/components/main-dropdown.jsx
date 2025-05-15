@@ -5,6 +5,7 @@ import "../css/components/main-dropDown.css"
 export function MainDropdown() {
   const [selectedOption, setSelectedOption] = useState('');
   const [selectedType, setSelectedType] = useState(null); // 'aula' or 'laboratorio'
+  const [showDropdown, setShowDropdown] = useState(true);
   const hora = "8:00 a.m - 12:00 p.m";
 
   // Datos de las aulas (puedes obtenerlos de una API o un archivo)
@@ -25,6 +26,9 @@ export function MainDropdown() {
 
   return (
     <article className="sg-dropdown-contentBuilder">
+
+    {showDropdown && (
+    <div className='sg-dropDownShow-content'>
 
       <div className="sg-dropDownInfo-content">
         <h1 className='sg-dropDown-h1'>Edificio N</h1>
@@ -85,6 +89,12 @@ export function MainDropdown() {
           <button className="sg-buttonInfo">vista general</button>
         </div>
       </div>
+      </div>
+    )}
+      <button onClick={() => setShowDropdown(!showDropdown)} className={showDropdown ? 'sg-dropdown-collapse-button sg-mainGlobal-styleCollapse'  : 'sg-dropdown-show-button sg-mainGlobal-styleCollapse'}>
+        {showDropdown ? "| ^ |" : "| = |"}
+      </button>
+
     </article>
   );
 }

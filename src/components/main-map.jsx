@@ -1,11 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "../css/components/main-map.css"
 
 export function MainMap() {
+    const [isVisible, setIsVisible] = useState(true);
 
-  return (
-    <canvas className='sg-map-container'>
-      
-    </canvas>
-  );
+    return (
+        <div>
+
+        </div>
+    );
 }

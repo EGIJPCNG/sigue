@@ -3,6 +3,12 @@
 
 .sg-dropdown-contentBuilder {
     display: flex;
+    flex-direction: row;
+    right: var(--dropdown-right);
+}
+
+.sg-dropDownShow-content{
+    display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
@@ -13,6 +19,16 @@
     width: auto;
     z-index: var(--dropdown-z-index);
 }
+
+  .sg-dropdown-collapse-button{
+    transform:translateX(53em) translateY(12em) rotate(90deg);
+    z-index: 100;
+  }
+
+  .sg-dropdown-show-button{
+    transform:translateX(66em) translateY(12em) rotate(90deg);
+    z-index: 100;
+  }
 
 .sg-dropDownInfo-content,
 .sg-dropDownInfo-contentHorario {

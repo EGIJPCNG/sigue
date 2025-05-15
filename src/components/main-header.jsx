@@ -3,6 +3,7 @@ import "../css/components/main-header.css"
 
 export function MainHeader() {
   const [currentTime, setCurrentTime] = useState(new Date());
+  const [showHeader, setShowHeader] = useState(true);
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -23,6 +24,9 @@ export function MainHeader() {
 
     <article className="sg-headerInfo-builder">
 
+      {showHeader && (
+      <div className="sg-headerInfo-builder-content">
+      
       <form className='sg-headerInfo-builder__left'>
         <input className='sg-input sg-input-bgTransparent text-small sg-header-font' type="text" placeholder="edificio-aula" />
         <button className='sg-button sg-button-search sg-button-primary'>
@@ -56,6 +60,14 @@ export function MainHeader() {
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" className="lucide lucide-user"><path d="M3 21v-2a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
         <span className='sg-header-font'>Iniciar sesión</span>
       </div>
+
+      </div>
+
+      )}
+
+      <button onClick={() => setShowHeader(!showHeader)} className={showHeader  ? 'sg-header-collapse-button sg-mainGlobal-styleCollapse' : 'sg-header-show-button sg-mainGlobal-styleCollapse'}>
+        {showHeader ? "| ^ |" : "| = |"}
+      </button>
 
     </article>
 
