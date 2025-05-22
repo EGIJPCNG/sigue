@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+// import {TaskList} from '../services/api-tasks.js';
 import AulaButton from './button-aula';
 import "../css/components/main-dropDown.css"
 
@@ -89,6 +90,7 @@ export function MainDropdown() {
           <button className="sg-buttonInfo">vista general</button>
         </div>
       </div>
+
       </div>
     )}
       <button onClick={() => setShowDropdown(!showDropdown)} className={showDropdown ? 'sg-dropdown-collapse-button sg-mainGlobal-styleCollapse'  : 'sg-dropdown-show-button sg-mainGlobal-styleCollapse'}>

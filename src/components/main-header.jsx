@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import "../css/components/main-header.css"
+import ModalLogin from './modal-login';
 
 export function MainHeader() {
   const [currentTime, setCurrentTime] = useState(new Date());
   const [showHeader, setShowHeader] = useState(true);
+
+  const [showLogin, setShowLogin] = useState(false);
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -19,7 +22,7 @@ export function MainHeader() {
         second: 'numeric',
         hour12: true,
     });
-
+   
   return (
 
     <article className="sg-headerInfo-builder">
@@ -56,9 +59,10 @@ export function MainHeader() {
           </button>
       </div>
 
-      <div className='sg-headerLogin-button sg-button-icon sg-header-font'>
+      <div className='sg-headerLogin-button sg-header-font'>
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" className="lucide lucide-user"><path d="M3 21v-2a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
-        <span className='sg-header-font'>Iniciar sesión</span>
+        <button className=' sg-headerLogin-button sg-button-icon sg-button-primary' onClick={() => setShowLogin(true)}>Iniciar sesión</button>
+        <ModalLogin open={showLogin} onClose={() => setShowLogin(false)} />
       </div>
 
       </div>
