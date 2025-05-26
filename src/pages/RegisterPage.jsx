@@ -26,7 +26,7 @@ function RegisterPage() {
                     className="w-full bg-zinc-700 text-white px-4 py-2 rounded-md my-2"  
                     placeholder= "password"    
                 />
-                <button type="submit" className="text-white bold">Register</button>
+                <button type="submit" className="text-white bg-zinc-700 rounded-md px-4 font-black text-lg hover:bg-zinc-600 transition-colors duration-200">Register</button>
             </form>
         </div>
     )
