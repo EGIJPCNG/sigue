@@ -73,7 +73,7 @@ function LoginPage({ open, onClose }) {
                 </form>
 
                 <p className="text-white text-sm mt-4 text-center">
-                    ¿Aún no tienes una cuenta? <a href="#" className="text-blue-400 hover:underline">Regístrate aquí</a>
+                    ¿Aún no tienes una cuenta? <a href="#" className="text-blue-400 hover:underline">Consulte a registro Académico</a>
                 </p>
             </div>
         </div>
