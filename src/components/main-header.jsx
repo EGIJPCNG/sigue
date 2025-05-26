@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import "../css/components/main-header.css"
 import ModalLogin from './modal-login';
+import LoginPage from '../pages/LoginPage';
+
 
 export function MainHeader() {
   const [currentTime, setCurrentTime] = useState(new Date());
@@ -62,7 +64,7 @@ export function MainHeader() {
       <div className='sg-headerLogin-button sg-header-font'>
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" className="lucide lucide-user"><path d="M3 21v-2a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
         <button className=' sg-headerLogin-button sg-button-icon sg-button-primary' onClick={() => setShowLogin(true)}>Iniciar sesión</button>
-        <ModalLogin open={showLogin} onClose={() => setShowLogin(false)} />
+        <LoginPage   open={showLogin} onClose={() => setShowLogin(false)} />
       </div>
 
       </div>
